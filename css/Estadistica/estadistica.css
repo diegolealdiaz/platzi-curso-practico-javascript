@@ -150,13 +150,13 @@ main .main__article--medidas .img{
 }
 
 main .img__promedio{
-    background-image: url("assets/img/promedio.jpg");
+    background-image: url("/assets/img/promedio.jpg");
 }
 main .img__mediana{
-    background-image: url("assets/img/mediana.jpg");
+    background-image: url("/assets/img/mediana.jpg");
 }
 main .img__moda{
-    background-image: url("assets/img/moda.jpg");
+    background-image: url("/assets/img/moda.jpg");
     margin-bottom: 25px;
 }
 
