@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style992px.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="../css/style1200px.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="../css/FigurasGeometricas/figuras.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <picture>
+            <img src="../assets/img/codigo40.png" alt="Logo imagen código programación" class="logo">
+        </picture>
+        <button class="nav__icon--container" id="menuPhone">
+            <span></span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__nav--container">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./figuras.html">Figuras Geométricas</a></li>
+                <li><a href="./descuentos.html">Precios y Descuentos</a></li>
+                <li><a href="./estadistica.html">Estadística</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="main__section--figure">
+            <div class="main__figure--info">
+                <h1>Bienvenidos al taller de Figuras Geométricas</h1>
+                <p>En este taller podrás obtener el calculo del perímetro y área de figuras geométricas como el Triangulo, Circulo y Cuadrado.</p>
+            </div>
+            <h3>Seleccione la figura</h3>
+            <div class="main__figure--select main__figure--selectTwo">
+                <picture>
+                    <button id="triangle">
+                        <img src="../assets/icon/triangle.svg" alt="">
+                    </button>
+                </picture>
+                <picture>
+                    <button id="circle">
+                        <img src="../assets/icon/circle.svg" alt="">
+                    </button>
+                    
+                </picture>
+                <picture>
+                    <button id="square">
+                        <img src="../assets/icon/square.svg" alt="">
+                    </button>
+                </picture>
+            </div>
+            <!-- <div class="main__figure--selected"></div> -->
+            <section id="aggFlex" >
+                <div id="aggFlex1" class="main__figure--selected">
+                    <h4>La opción seleccionada es: <b class="edit__figure">Triangulo</b> </h4>
+                    <form id="miForm" action="">
+                        <label for="medida1">
+                            <span>Por favor digite la medida del <b class="edit__medida1">lado</b> del <b class="edit__figure">triangulo</b> (cm)</span>
+                            <input type="number" id="medida1" name="medida1" placeholder="">
+                        </label>
+                        <label for="medida2">
+                            <span>Por favor digite la medida de la <b class="edit__medida2">altura</b> del <b class="edit__figure">triangulo</b> (cm)</span>
+                            <input type="number" id="medida2" name="medida2" placeholder="">
+                            <button id="btnEnviar" type="button">Enviar</button>
+                        </label>
+                    </form>
+                </div>
+                <div id="aggFlex2" class="main__figure--selectedResult"></div>
+            </section>
+            
+            <!-- <div class="main__figure--selectedResult">
+                <h4>El resultado es: </h4>
+                <div class="main__figure--result">
+                    <p>El <b>perímetro</b> del triangulo es: <b>1.85 cm</b></p>
+                    <p>El <b>área</b> el triangulo es: <b>1.85cm</b></p>
+                </div>
+            </div>  -->
+        </section>
+        </section>
+        <section class="section__imagen">
+            <h1>Talleres Curso Practico de JavaScript</h1>
+        </section>
+        <section class="section__workshops" id="Workshops">
+            <div class="section__workshops--info">
+                <h2>Actividades desarrolladas</h2>
+                <p>En esta sección se visualizan las cuatro actividades de aprendizaje desarrolladas </p>
+            </div>
+            <section class="section__workshops--container">
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-cubo-64.png" alt="Figura cubo">
+                    <h3>Figuras Geométricas</h3>
+                    <p>En este taller se presenta el calculo del perímetro y área de algunas figuras geométricas como lo son el triangulo, cuadrado y circulo.</p>
+                    <a href="figuras.html">Ir al taller <span></span></a>
+                </article>
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-transferencia-de-dinero-64.png" alt="Figura precios y descuentos">
+                    <h3>Precios y Descuentos</h3>
+                    <p>En este taller se presenta el calculo de diferentes descuentos aplicados a un precio especifico.</p>
+                    <a href="descuentos.html">Ir al taller <span></span></a>
+                </article>
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-marcapáginas-64.png" alt="Figura estadística">
+                    <h3>Estadística</h3>
+                    <p>En este taller se presenta el calculo estadístico del promedio, mediana y moda en una lista de números.</p>
+                    <a href="estadistica.html">Ir al taller <span></span></a>
+                </article>
+            </section>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2021 - Díseño Web realizado por <b>Diego Leal</b></p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="../js/figuras.js"></script>
+</body>
+</html>

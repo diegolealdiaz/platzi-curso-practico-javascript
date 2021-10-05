@@ -1,0 +1,141 @@
+/*Acomodando el Header*/
+
+header{
+    flex-direction: row;
+}
+
+header .logo{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+header .header__nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    z-index: 2;
+    width: 70%;
+    height: 70px;
+    line-height: 2rem;
+}
+
+header .header__nav--container{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header__nav--container a{
+    font-size: 1.8rem;
+}
+
+/*Escondiendo el elemnto hamburguesa*/
+header .nav__icon--container{
+    display: none;
+}
+
+header .header__nav--container a:hover{
+    text-decoration: underline;
+}
+
+/*Acomodando el main*/
+
+/*Section 1*/
+
+main .section__imagen h1{
+    font-size: 3.5rem;
+    padding-top: 170px;
+}
+
+main .section__imagen a{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.7rem;
+}
+
+/*Section 2*/
+
+main .section__table{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .section__info--container h2{
+    font-size: 2.7rem;
+}
+
+main .section__info--container p{
+    font-size: 1.6rem;
+    margin-top: 25px;
+}
+
+main .section__info--container a{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+main .section__table--container{
+    margin-bottom: 0px;
+}
+
+
+.section__info--containervalue{
+    border: 1px solid yellow;
+    color: yellow;
+}
+
+.section__info--tablevalue{
+    border: 1px solid yellow;
+}
+
+/*Icon Tabla*/
+main .filtable span{
+    width: 25px;
+    height: 25px;
+}
+
+/*Section 3*/
+
+main .section__workshops--container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+main .section__workshops--info h2{
+    font-size: 2.6rem;
+}
+
+main .section__workshops--info p{
+    font-size: 1.3rem;
+}
+
+main .esection__workshops--figures{
+    max-width: 550px;
+    text-align: center;
+}
+
+main .esection__workshops--figures h3{
+    font-size: 1.8rem;
+
+}
+
+main .esection__workshops--figures p{
+    font-size: 1.2rem;
+}
+
+main .esection__workshops--figures a{
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 1.3rem;
+}
+
+
+

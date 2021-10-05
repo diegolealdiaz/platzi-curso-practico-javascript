@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadistica</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style992px.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="../css/style1200px.css" media="(min-width: 1200px)">
+    <link rel="stylesheet" href="../css/FigurasGeometricas/figuras.css">
+    <link rel="stylesheet" href="../css/Estadistica/estadistica.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <picture>
+            <img src="../assets/img/codigo40.png" alt="Logo imagen código programación" class="logo">
+        </picture>
+        <button class="nav__icon--container" id="menuPhone">
+            <span></span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__nav--container">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./paginas/figuras.html">Figuras Geométricas</a></li>
+                <li><a href="./paginas/descuentos.html">Precios y Descuentos</a></li>
+                <li><a href="./estadistica.html">Estadística</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="main__section--figure">
+            <div class="main__figure--info">
+                <h1>Bienvenidos al taller de Figuras Geométricas</h1>
+                <p>En este taller podrás obtener el calculo del perímetro y área de figuras geométricas como el Triangulo, Circulo y Cuadrado.</p>
+            </div>
+        </section>
+        <section class="main__section--list">
+            <div class="main__list--info">
+                <h2>Generador de Lista</h2>
+                <p>En el siguiente input ingresara la data de la lista separada por comas EJ: ingresa <b>1,2,3,4</b></p>
+                <div class="main__list--form1">
+                    <form action="" id="miFormDiscount">
+                        <label for="amountlist">
+                            <span>Digite los datos de la lista: </span>
+                            <input type="text" id="amountlist" name="amountlist">
+                        </label>
+                        <button type="button" id="buttonGenerar">Generar</button>
+                    </form>
+                </div>
+                <div class="main__list--create">
+                    <!-- <h3>Lista generada</h3>
+                    <div class="main__list--integrate">
+                        <p>[1,2,3,4,5,6,7,8,9,0,9,8,7]</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="main__section--calculator">
+            <article class="main__article--medidas">
+                <picture class="img img__promedio">
+                </picture>
+                <div>
+                    <h2 class="article__title">Promedio</h2>
+                    <button type="button" class="article__button" id="buttonPromedio">Generar</button>
+                </div>
+            </article>
+            <article class="esconde agg__response--promedio">
+                <!-- <div class="main__Article--response">
+                    <p>El promedio de la lista agregada es: <b>3</b></p>
+                </div> -->
+            </article>
+            <article class="main__article--medidas">
+                <picture class="img img__mediana">
+                </picture>
+                <div>
+                    <h2 class="article__title">Mediana</h2>
+                    <button type="button" class="article__button" id="buttonMediana">Generar</button>
+                </div>
+            </article>
+            <article class="esconde agg__response--mediana">
+                <!-- <div class="main__Article--response">
+                    <p>La mediana de la lista agregada es: <b>3</b></p>
+                </div> --> 
+            </article>
+            <article class="main__article--medidas">
+                <picture class="img img__moda">
+                </picture>
+                <div>
+                    <h2 class="article__title">Moda</h2>
+                    <button type="button" class="article__button" id="buttonModa">Generar</button>
+                </div>
+            </article>
+            <article class="esconde agg__response--moda">
+                <!-- <div class="main__Article--response">
+                    <p>La moda de la lista agregada es: <b>3</b></p>
+                </div> --> 
+            </article>
+        </section>
+        <section class="section__imagen">
+            <h1>Talleres Curso Practico de JavaScript</h1>
+        </section>
+        <section class="section__workshops" id="Workshops">
+            <div class="section__workshops--info">
+                <h2>Actividades desarrolladas</h2>
+                <p>En esta sección se visualizan las cuatro actividades de aprendizaje desarrolladas </p>
+            </div>
+            <section class="section__workshops--container">
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-cubo-64.png" alt="Figura cubo">
+                    <h3>Figuras Geométricas</h3>
+                    <p>En este taller se presenta el calculo del perímetro y área de algunas figuras geométricas como lo son el triangulo, cuadrado y circulo.</p>
+                    <a href="figuras.html">Ir al taller <span></span></a>
+                </article>
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-transferencia-de-dinero-64.png" alt="Figura precios y descuentos">
+                    <h3>Precios y Descuentos</h3>
+                    <p>En este taller se presenta el calculo de diferentes descuentos aplicados a un precio especifico.</p>
+                    <a href="descuentos.html">Ir al taller <span></span></a>
+                </article>
+                <article class="esection__workshops--figures">
+                    <img src="../assets/img/icons8-marcapáginas-64.png" alt="Figura estadística">
+                    <h3>Estadística</h3>
+                    <p>En este taller se presenta el calculo estadístico del promedio, mediana y moda en una lista de números.</p>
+                    <a href="estadistica.html">Ir al taller <span></span></a>
+                </article>
+            </section>
+        </section>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2021 - Díseño Web realizado por <b>Diego Leal</b></p>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../js/estadistica.js"></script>
+</body>
+</html>

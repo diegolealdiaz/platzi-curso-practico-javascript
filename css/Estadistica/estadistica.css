@@ -1,0 +1,259 @@
+/*---------------------------------------------*/
+/*---Estilos Main---*/
+
+/*---Estilos Main Section 2---*/
+
+main .main__list--info{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center; 
+}
+
+main .main__list--info h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+main .main__list--info > p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+
+
+/*Formulario 1*/
+main .main__list--form1 {
+    width: 80%;
+    min-width: 288px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+main .main__list--form1 form {
+    width: 100%;
+    height: auto
+}
+
+main .main__list--form1 label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+main .main__list--form1 span{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+main .main__list--form1 input{
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 1px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+main .main__list--form1 button{
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 1.4rem;
+    border-color: rgb(27, 22, 22);
+    border-radius: 15px;
+    outline: 2px solid rgb(27, 22, 22);
+    outline-offset: 2px;
+
+}
+
+main .main__list--create h3{
+    margin-top: 25px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    padding-top: 10px;
+}
+
+main .main__list--integrate{
+    width: 90%;
+    min-width: 288px;
+    max-width: 500px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+
+main .main__list--integrate p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+}
+
+main .main__list--create{
+    background-color: var(--green-result);
+    border-radius: 10px;
+}
+
+
+/*---Estilos Main Section 3---*/
+main .main__section--calculator{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    margin-top: 15px;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-top: 1px solid var(--white-floral);
+    background-color: var(--header-black); 
+}
+
+/*CADA ARTICLE*/
+main .main__article--medidas{
+    width: 90%;
+    min-width: 210px;
+    height: 330px;
+    padding-top: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    background-color: var(--black); 
+    border: 1px solid var(--white-floral);
+}
+
+
+main .main__article--medidas .img{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    height: 210px;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .img__promedio{
+    background-image: url("/assets/img/promedio.jpg");
+}
+main .img__mediana{
+    background-image: url("/assets/img/mediana.jpg");
+}
+main .img__moda{
+    background-image: url("/assets/img/moda.jpg");
+    margin-bottom: 25px;
+}
+
+main .main__article--medidas > div{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 90px;
+    border-radius: 10px;
+    /*border: 1px solid var(--white-floral);*/
+}
+
+main .article__title{
+    font-size: 2.4rem;
+    color: var(--white-floral);
+}
+
+main .article__button{
+    width: 150px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    font-weight: 550;
+    outline: 2px solid var(--white-floral);;
+    outline-offset: 2px;
+    border: 1px solid var(--white-floral);;
+    background-color: var(--white-floral);;
+}
+
+/*Respuesta Article*/
+main .main__Article--response{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-width: 288px;
+    max-width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: var(--green-result);
+    border-radius: 10px;
+}
+
+main .main__Article--response p{
+    font-size: 1.5rem;
+}
+
+@media (min-width:900px){
+
+    
+    main .main__list--info > p{
+        font-size: 1.4rem;
+    }
+    
+
+    main .main__list--form1 input{
+        width: 400px;
+    }
+}
+
+@media (min-width:1000px){ 
+
+    main .main__section--calculator{
+        width: 100%;
+    }
+    main .main__list--form1 input{
+        width: 600px;
+    }
+
+    main .main__article--medidas{
+        width: 45%;
+    }
+
+    main .main__section--calculator{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .esconde{
+        display: none;
+    }
+
+    .agg__response--promedio, .agg__response--mediana, .agg__response--moda{
+        margin: 0 auto;
+    }
+
+    main .agrega{
+        display: block;
+    }
+}
+
+@media (min-width:1200px){ 
+    main .main__figure--info{
+        max-width: 1000px;
+    }
+}

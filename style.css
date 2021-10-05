@@ -1,0 +1,430 @@
+:root{
+    --header-black: #141414;
+    --just-white: #fff;
+    --header-blackblue: #17171E;
+    --white-floral: #FFFFF0;
+    --gray-table: #e7e7e7;
+    --black--article: #222121;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --yellow: #FFFF00;
+    --grey-letters: #696969;
+    --green-result: #32CD32;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+/*---------------------------------------------*/
+/*---Estilos Header---*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 70px;
+    background-color: var(--header-black)
+}
+
+/*---Estilos Logo Header---*/
+header .logo{
+    margin-left: 15px;
+}
+
+/*---Estilos Logo Menu Hamburguesa Header---*/
+header .nav__icon--container{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 15px;
+
+    /*Quitando apariencia al boton*/
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+header .nav__icon--container span{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("./assets/img/menu40.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*---Estilos Nav Header---*/
+header .header__nav{
+    position: absolute;
+    display: none;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    top: 70px;
+    text-align: center;
+    background-color: var(--header-blackblue);
+}
+
+header .header__nav--container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+}
+header .header__nav--container li{
+    width: 100%;
+    padding: 25px;
+}
+header .header__nav--container a{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--just-white);
+}
+
+header .header__nav--container a:hover{
+    color:var(--yellow)
+}
+
+/*---Permite Visualizar el MenuPhone---*/
+
+header .header__nav--visualize{
+    display: block;
+    z-index: 1;
+    /*transition: margin-left .5s;*/
+}
+
+/*---Animacion---*/
+header .header__nav--visualize {
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  /*---------------------------------------------*/
+/*---Estilos Main---*/
+
+main{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background-color: var(--white-floral);
+}
+
+/*---Estilos Main Section 1---*/
+main .section__imagen{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("./assets/img/codeBig.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    opacity: 0.95;
+    text-align: center;
+    z-index: 0;
+}
+
+main .section__imagen h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    padding-top: 50px;
+    color: var(--white-floral)
+}
+
+main .section__imagen a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% - 29px);
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(89,73,30,0.16);
+    background-color: var(--just-white);
+    color: var(--header-black);
+}
+
+main .section__imagen span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 5px;
+    background-image: url("./assets/icon/down-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---Estilos Main Section 2---*/
+main .section__table{
+    width: 100%;
+    height: auto;
+}
+
+main .section__info--container{
+    width: 90%;
+    min-width: 280px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+main .section__info--container h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2rem;
+    margin-top: 30px;
+}
+
+
+main .section__info--container p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    color: var(--grey-letters)
+}
+
+main .section__info--container a{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-top: 35px;
+    border-radius: 5px;
+    color:var(--white-floral);
+    background-color: var(--header-black);
+}
+
+/*--Table--*/
+main .section__table--container{
+    margin: 0 auto;
+    width: 70%;
+    min-width: 220px;
+    max-width: 500px;
+    height: 180px;
+    margin-bottom: 40px;
+}
+
+main .section__info--table{
+    width: 90%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 100%;
+    margin: 0 auto;
+}
+/*Tabla*/
+main .section__info--table table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+main .section__info--table table td{
+    width: 50%;
+    font-size: 1.4rem;
+}
+main .section__info--table table td:nth-child(1){
+    font-weight: bold;
+}
+
+main .section__info--table table .filtable{
+    background-color: var(--gray-table)
+}
+
+/*Bordes*/
+main .section__info--table .file__one--left{
+    border-radius: 15px 0 0 0;
+}
+
+main .section__info--table .file__one--right{
+    border-radius: 0 15px 0 0;
+}
+
+main .section__info--table .file__two--left{
+    border-radius: 0 0 0 15px;
+}
+
+main .section__info--table .file__two--right{
+    border-radius: 0 0 15px 0;
+}
+
+/*Icon Tabla*/
+main .filtable span{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: text-bottom;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center; 
+}
+
+
+main .file__one--right span{
+    background-image: url("./assets/icon/icons8-html-5.svg");
+}
+
+main .icon__css span{
+    background-image: url("./assets/icon/icons8-css3.svg");
+}
+
+main .file__two--right span{
+    background-image: url("./assets/icon/icons8-javascript.svg");
+}
+
+/*---Estilos Main Section 3---*/
+
+main .section__workshops{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--header-black);
+}
+
+main .section__workshops--info, .section__workshops--container{
+    width: 90%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+main .section__workshops--info h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-top: 20px;
+    color: var(--just-white);
+}
+
+main .section__workshops--info p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    color:var(--just-white)
+}
+
+/*Articles de cada taller*/
+
+/*Figuras geometricas*/
+main .esection__workshops--figures{
+    width: 100%;
+    min-width: 288px;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: var(--black--article);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+main .esection__workshops--figures h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
+
+main .esection__workshops--figures p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--just-white);
+    margin-top: 10px;
+    text-align: justify;
+}
+
+main .esection__workshops--figures a{
+    display: inline-block;
+    margin-top: 14px;
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--header-black);
+    border-radius: 15px;
+    outline: 2px solid var(--just-white);
+    outline-offset: 2px;
+    background-color: var(--just-white);
+}
+
+main .esection__workshops--figures span{
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    vertical-align:baseline;
+    background-image: url("./assets/icon/bx-right-arrow-alt.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .esection__workshops--figures a:hover{
+    text-decoration: underline;
+}
+
+main .section__workshops--container{
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+/*---Footer---*/
+
+footer{
+    width: 100%;
+    min-width: 320px;
+    height: 60px;
+    text-align: center;
+    background-color: var(--white-floral);
+}
+
+footer p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 7rem;
+}

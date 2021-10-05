@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Curso Practico JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style992px.css" media="(min-width: 992px)">
+    <link rel="stylesheet" href="./css/style1200px.css" media="(min-width: 1200px)">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <picture>
+            <img src="./assets/img/codigo40.png" alt="Logo imagen código programación" class="logo">
+        </picture>
+        <button class="nav__icon--container" id="menuPhone">
+            <span></span>
+        </button>
+        <nav class="header__nav">
+            <ul class="header__nav--container">
+                <li><a href="">Home</a></li>
+                <li><a href="./paginas/figuras.html">Figuras Geométricas</a></li>
+                <li><a href="./paginas/descuentos.html">Precios y Descuentos</a></li>
+                <li><a href="./paginas/estadistica.html">Estadística</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <!-- main -->
+    <main>
+        <section class="section__imagen">
+            <h1>Talleres Curso Practico de JavaScript</h1>
+            <a href="#Workshops">Ir a los talleres <span></span></a>
+        </section>
+        <section class="section__table">
+            <div class="section__info--container">
+                <h2>Aprendizajes adquiridos</h2>
+                <p>En esta sección es posible visualizar algunas herramientas aprendidas en este taller</p>
+                <a id="btnHerramientas" class="section__info--h3">Herramientas</a>
+            </div>
+            <section class="section__table--container">
+                <div class="section__info--table">
+                    <table>
+                        <tr>
+                            <td class="filtable file__one--left">HTML</td>
+                            <td class="filtable file__one--right">35% <span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="filtable">CSS</td>
+                            <td class="filtable icon__css">35% <span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="filtable file__two--left">JavaScript</td>
+                            <td class="filtable file__two--right">30% <span></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+            <section class="section__workshops" id="Workshops">
+                <div class="section__workshops--info">
+                    <h2>Actividades desarrolladas</h2>
+                    <p>En esta sección se visualizan las cuatro actividades de aprendizaje desarrolladas </p>
+                </div>
+                <section class="section__workshops--container">
+                    <article class="esection__workshops--figures">
+                        <img src="./assets/img/icons8-cubo-64.png" alt="Figura cubo">
+                        <h3>Figuras Geométricas</h3>
+                        <p>En este taller se presenta el calculo del perímetro y área de algunas figuras geométricas como lo son el triangulo, cuadrado y circulo.</p>
+                        <a href="./paginas/figuras.html">Ir al taller <span></span></a>
+                    </article>
+                    <article class="esection__workshops--figures">
+                        <img src="./assets/img/icons8-transferencia-de-dinero-64.png" alt="Figura precios y descuentos">
+                        <h3>Precios y Descuentos</h3>
+                        <p>En este taller se presenta el calculo de diferentes descuentos aplicados a un precio especifico.</p>
+                        <a href="./paginas/descuentos.html">Ir al taller <span></span></a>
+                    </article>
+                    <article class="esection__workshops--figures">
+                        <img src="./assets/img/icons8-marcapáginas-64.png" alt="Figura estadística">
+                        <h3>Estadística</h3>
+                        <p>En este taller se presenta el calculo estadístico del promedio, mediana y moda en una lista de números.</p>
+                        <a href="./paginas/estadistica.html">Ir al taller <span></span></a>
+                    </article>
+                </section>
+            </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright &copy; 2021 - Díseño Web realizado por <b>Diego Leal</b></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

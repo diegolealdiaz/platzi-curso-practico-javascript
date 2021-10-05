@@ -1,0 +1,69 @@
+
+/*Header*/
+header .header__nav{
+    width: 50%;
+}
+
+
+
+/*Main*/
+/*Section 2*/
+main .section__table{
+    height: 400px;
+}
+
+main .section__info--container h2{
+    font-size: 2.9rem;
+}
+
+main .section__info--container p{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-top: 30px;
+}
+
+main .section__info--container a{
+    margin-top: 30px;
+}
+
+main .section__info--container{
+    max-width: 600px;
+}
+
+main .section__table--container{
+    height: 220px;
+}
+
+main .section__info--table{
+    max-width: 400px;
+}
+
+main .section__info--table table td{
+    font-size: 1.7rem;
+}
+
+/*Section 3*/
+
+main .section__workshops--info h2{
+    font-size: 2.8rem;
+}
+
+main .section__workshops--info p{
+    font-size: 1.5rem;
+}
+
+main .esection__workshops--figures h3{
+    font-size: 1.9rem;
+
+}
+
+main .esection__workshops--figures p{
+    font-size: 1.3rem;
+}
+
+main .esection__workshops--figures a{
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 1.3rem;
+}
